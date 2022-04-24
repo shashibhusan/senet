@@ -1,0 +1,16 @@
+body{ font-family:Arial, Helvetica, sans-serif; font-size:80%;}
+.err_logo{ padding:0px 0px 5px 0px}
+.err_table_border{ border:1px solid #547BBD; }
+.err_header{ background:#547BBD; padding:6px 6px 6px 15px; color:#fff; font-weight:bold; font-size:130%;}
+.err_footer{ background:#F0F0F0; padding:6px 20px 6px 20px; color:#333; text-align:right;}
+.err_msg{ background:url(../images/error.gif) no-repeat 20px 18px; padding:20px 10px 20px 75px; height:50px; vertical-align:top;color:#333;}
+.err_msg ul{margin:0px; padding:10px 0px 0px 20px;}
+.err_table_border a{ color:#2768A7; text-decoration:underline;}
+.err_table_border a:hover{ text-decoration:none;}
+/* for alert */
+.alert_table{border:1px solid #547bbd}
+.alert_table td{padding:0px 5px 0px 5px}
+.button_class{background:url(../images/changelimit_button_bg.jpg);border-bottom:#a1a1a1 1px solid;border-left:#a1a1a1 1px solid;border-right:#a1a1a1 1px solid;border-top:#a1a1a1 1px solid;cursor:pointer;font:bold 11px Tahoma,Verdana,Arial,Helvetica,sans-serif;height:20px;padding-left:1px;padding-right:1px;text-align:center;width:auto}
+.button_row{height:40px;text-align:center;vertical-align:middle;background:#F0F0F0}
+.alert_header{ padding:6px 6px 6px 15px; color:#fff; font-weight:bold; font-size:100%; height:25px}
+.alert_text{font-weight:bold; color:#143368}

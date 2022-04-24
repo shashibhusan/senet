@@ -1,0 +1,40 @@
+/*--------------------------------------------------------*/
+/*	Charts and Graphs
+/*--------------------------------------------------------*/
+.chart {}
+/*plugin styles*/
+.visualize { z-index:0; position: relative; background: #fff; margin-top:30px; bottom:10px; font-size:.8em; border:solid 1px #ddd;border-bottom:solid 1px #aaa; -moz-box-shadow:0 1px 0 #fff; -webkit-box-shadow:0 1px 0 #fff;  -khtml-box-shadow:0 1px 0 #fff;  box-shadow:0 1px 0 #fff; -moz-border-radius:2px; -khtml-border-radius: 2px; -webkit-border-radius: 2px; border-radius: 2px;}
+.visualize canvas { position: absolute;  }
+.visualize ul,.visualize li { margin: 0; padding: 0 }
+
+/*table title, key elements*/
+.visualize .visualize-info { padding: 9px; background: #fff; border: 1px solid #ddd; border-top:solid 1px #fff; border-left:solid 1px #fff; position: absolute; top: -20px; left:10px ; -moz-border-radius:3px; -webkit-border-radius: 3px; -khtml-border-radius: 3px; border-radius: 3px; -moz-box-shadow: inset 0 0 30px #e9e9e9; -webkit-box-shadow: inset 0 0 30px #e9e9e9;  -khtml-box-shadow: inset 0 0 30px #e9e9e9;  box-shadow: inset 0 0 30px #e9e9e9; }
+.visualize .visualize-title { display: block; color: #333; margin-bottom: 3px;  font-size: 1em }
+.visualize ul.visualize-key { list-style: none  }
+.visualize ul.visualize-key li { list-style: none; float: left; margin-right: 10px; padding-left: 10px; position: relative }
+.visualize ul.visualize-key .visualize-key-color { width: 6px; height: 6px; left: 0; position: absolute; top: 50%; margin-top: -3px }
+.visualize ul.visualize-key .visualize-key-label { color: #000 }
+
+/*pie labels*/
+.visualize-pie .visualize-labels { list-style: none; width:100% !important }
+.visualize-pie .visualize-label-pos, .visualize-pie .visualize-label { position: absolute;  margin: 0; padding:0; }
+.visualize-pie .visualize-label { display: block; font-family:'Philosopher', serif; color: #fff; font-weight:normal; text-shadow:none}
+.visualize-pie-outside .visualize-label { color: #000; font-weight: normal; }
+
+/*line,bar, area labels*/
+.visualize-labels-x,.visualize-labels-y { position: absolute; left: 0; top: 0; list-style: none; z-index:0 }
+.visualize-labels-x li, .visualize-labels-y li { position: absolute; bottom: 0 }
+.visualize-labels-x li span.label, .visualize-labels-y li span.label { position: absolute; color: #555 }
+.visualize-labels-x li span.line, .visualize-labels-y li span.line {  position: absolute; border: 0 solid #eee }
+.visualize-labels-x li { height: 100% }
+.visualize-labels-x li span.label { top: 100%; margin-top: 5px }
+.visualize-labels-x li span.line { border-left-width: 1px; height: 100%; display: block }
+.visualize-labels-x li span.line { border: 0;} /*hide vertical lines on area, line, bar*/
+.visualize-labels-y li { width: 100%;  padding:0}
+.visualize-labels-y li span.label { right:0; bottom:2px; color:#999; display: block; width: 100px; text-align: right; background:none}
+.visualize-labels-y li span.line { border-top-width: 1px; width: 100% }
+.visualize-labels-x li span.line { border:0px solid #eee; border-left-width:1px }
+.visualize-bar .visualize-labels-x li span.label { width: 100%; text-align: center }
+/* tooltip */
+.visualize-tooltip {font-size:1.1em; background:#444;padding:5px 10px 5px 10px;border:1px solid #444; color:#fff; text-shadow:none; -moz-border-radius: 2px; -webkit-border-radius: 2px; -khtml-border-radius: 2px; border-radius: 2px; }
+.visualize-tooltip p {margin:0;}

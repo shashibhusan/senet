@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+a{text-decoration:none; color:#4F4F4F;}
+a:visited{text-decoration:none; color:#4F4F4F;}
+a:hover{text-decoration:none; color:#FF6600;}
+
+.arrowlistmenu{width: 180px; /*width of accordion menu*/ margin:10px; }
+.arrowlistmenu .menuheader{ /*CSS class for menu headers in general (expanding or not!)*/
+font: bold 11px Arial; color: #535353; border-left:#053391 5px solid;
+margin-bottom: -8px; /*bottom spacing between header and rest of content*/
+text-transform: uppercase; padding: 1px 0 1px 10px; /*header text is indented 10px*/
+cursor: hand; cursor: pointer;
+}
+
+.arrowlistmenu ul{ /*CSS for UL of each sub menu*/
+list-style-type: none;
+margin: 0;
+padding: 0;
+margin-top:15px;
+margin-bottom: 8px; /*bottom spacing between each UL and rest of content*/
+}
+
+.arrowlistmenu ul li{
+padding-bottom: 0px; /*bottom spacing between menu items*/
+}
+
+.arrowlistmenu ul li a{ margin-left:10px; color: #666666;
+background: url(images/arrowbullet.png) no-repeat center left; /*custom bullet list image*/
+display: block; padding: 2px 0; padding-left: 19px; /*link text is indented 19px*/
+text-decoration: none; font-size: 90%;
+}
+
+/*.arrowlistmenu ul li a:visited{
+color: #A70303;
+}*/
+
+.arrowlistmenu ul li a:hover{ /*hover state CSS*/
+color: #FF6600;
+}

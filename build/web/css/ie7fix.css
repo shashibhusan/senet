@@ -1,0 +1,4 @@
+/*prevent extra top spacing*/
+a.ui-button-text-only .ui-button-text {overflow:hidden}
+/*set height of zoom button so it can be clickable*/
+.squares-all {height:200px}

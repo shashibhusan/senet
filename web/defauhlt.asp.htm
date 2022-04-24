@@ -1,0 +1,293 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Welcome to office of DCMSME</title>
+<link href="defauhlt.asp_files/styles.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="https://dcmsme.net/images/favicon.ico" type="image/x-icon">
+<script type="text/javascript">
+function go_itunes()
+{
+
+	var r=confirm("There is an app available for this site! Do you want to downlaod the app?");
+	if (r==true)
+	{	
+		setCookie("AlreadyDownloaded","YESIOS",365);
+		location.href="http://itunes.apple.com/us//id406632797?mt=8";
+	}
+	else
+	{
+		var n=confirm("Do you want a reminder on next visit for app download.");
+		if (n==true)
+		{	
+			setCookie("AlreadyDownloaded","",-1);
+		}
+		else
+		{
+			setCookie("AlreadyDownloaded","NotInt",365);
+		}
+	}
+}
+function go_bb()
+{
+	var r=confirm("There is an app available for this site! Do you want to downlaod the app?");
+	if (r==true)
+	{	
+		setCookie("AlreadyDownloaded","YESBB",365);
+		location.href="http://appworld.blackberry.com/webstore/content/42373?lang=en";
+	}
+	else
+	{
+		var n=confirm("Do you want a reminder on next visit for app download.");
+		if (n==true)
+		{	
+			setCookie("AlreadyDownloaded","",-1);
+		}
+		else
+		{
+			setCookie("AlreadyDownloaded","NotInt",365);
+		}
+	}
+}
+function go_android()
+{
+	var r=confirm("There is an app available for this site! Do you want to downlaod the app?");
+	if (r==true)
+	{	setCookie("AlreadyDownloaded","YESANDROID",365);		
+		location.href="https://market.android.com/details?id=com.amity&feature=search_result";
+	}	
+	else
+	{
+		var n=confirm("Do you want a reminder on next visit for app download.");
+		if (n==true)
+		{	
+			setCookie("AlreadyDownloaded","",-1);
+		}
+		else
+		{
+			setCookie("AlreadyDownloaded","NotInt",365);
+		}
+	}
+}
+
+
+function getCookie(c_name)
+{
+var i,x,y,ARRcookies=document.cookie.split(";");
+for (i=0;i<ARRcookies.length;i++)
+  {
+  x=ARRcookies[i].substr(0,ARRcookies[i].indexOf("="));
+  y=ARRcookies[i].substr(ARRcookies[i].indexOf("=")+1);
+  x=x.replace(/^\s+|\s+$/g,"");
+  if (x==c_name)
+    {
+    return unescape(y);
+    }
+  }
+}
+
+function setCookie(c_name,value,exdays)
+{
+var exdate=new Date();
+exdate.setDate(exdate.getDate() + exdays);
+var c_value=escape(value) + ((exdays==null) ? "" : "; expires="+exdate.toUTCString());
+document.cookie=c_name + "=" + c_value;
+}
+
+function checkCookie()
+{
+	var username=getCookie("AlreadyDownloaded");
+	
+
+
+	if (username!=null && username!="")
+	  {
+	  //to do nothing (we can do this if we dont need to show second time)
+//		 setCookie("AlreadyDownloaded","YESIOS",-1);
+		//alert(username);
+	  }
+	else 
+	  { 	
+		  
+		  if((navigator.userAgent.match(/iPhone/i)) || (navigator.userAgent.match(/iPod/i))|| (navigator.userAgent.match(/iPad/i))) {
+				
+				go_itunes();
+			  }
+			var ua = navigator.userAgent.toLowerCase();
+			var isAndroid = ua.indexOf("android") > -1;
+			if(isAndroid) {
+			  go_android();
+			}
+			var isbb = ua.indexOf("blackberry") > -1;
+			if(isbb) {
+			  go_bb();
+			}		
+
+	  }
+}
+
+
+
+checkCookie();
+
+
+</script>
+<!-- HELP SLIDER -->
+    <script src="defauhlt.asp_files/jquery.js"></script>   
+	<script src="defauhlt.asp_files/AC_RunActiveContent.js" type="text/javascript"></script>
+<script type="text/javascript">if (window.addEventListener) { 
+  var callback_func = function(evt) { 
+    if ('undefined' != typeof evt.target && "A" == evt.target.nodeName) { 
+      var url = evt.target.href; 
+      EBCallBackMessageReceivede52c4f83_b7b9_47a3_b109_3479ad3d6b40(url); 
+    } 
+    return true; 
+  }; 
+  var result = window.addEventListener('click', callback_func, true); 
+  var result = window.addEventListener('contextmenu', callback_func, true); 
+} else if (document.attachEvent) {
+  var callback_func = function () { 
+    if ('undefined' != typeof event.srcElement &&'A' == event.srcElement.tagName) { 
+      var url = event.srcElement.href; 
+      EBCallBackMessageReceivede52c4f83_b7b9_47a3_b109_3479ad3d6b40(url); 
+    } 
+    return true; 
+  }; 
+  var result = document.attachEvent('onclick', callback_func); 
+  var result = document.attachEvent('oncontextmenu', callback_func); 
+} 
+ 
+
+</script></head>
+
+<body>
+<!-- template -->
+<div id="container">
+</div>
+<div id="wrapper">
+<div id="template">
+<div id="header">
+<div id="logo">	
+	<a href="https://dcmsme.net/default.asp" title="dcmsme">dcmsme</a> 
+</div>
+ <div id="sangathan">
+<!-- 	<p style="color:#FFFFFF !important; font-size:12px; text-align:center;">Due to scheduled maintenance dcmsme will not be accessible from Friday, 6th April 2012 11:00 HRS to Saturday, 7th April 2012 10:00 HRS (IST)</p> -->
+</div>
+</div>
+<div id="loginwarpper">
+<div id="col-left">
+<script language="JavaScript">
+<!--
+	
+
+
+	function Validate()
+	{
+		uName	=	document.frmdcmsme.username.value;
+		pWd		=	document.frmdcmsme.password.value;		
+
+
+		 if ( uName != "" && pWd != "" && document.frmdcmsme.username.value.length <= 4 )
+		 {
+			document.frmdcmsme.action="../Admindcmsme/Webforms/login.aspx";
+			document.frmdcmsme.submit();
+
+		 }
+		 else if ( uName != "" && pWd != "" && document.frmdcmsme.username.value.length > 4 )
+		 {
+			
+			document.frmdcmsme.action="../dcmsme/default.aspx";
+			document.frmdcmsme.submit();
+		 }
+		 else
+		 {
+			alert("Invalid Input !");
+			document.frmdcmsme.username.focus();
+			return false;
+			
+		 }
+		return;
+	}	
+
+	
+//-->
+</script>
+
+<div id="modal-loginbox">
+<div id="contents">
+<h1 style="white-space:pre; width:80px; float:left;line-height:35px;">Feedback</h1> 
+<span style="float:left; padding-top:13px;"><font color="#990033"> <b></b></font></span>
+<form method="post" name="frmdcmsme" id="frmdcmsme" onsubmit="return Validate();">
+<div class="form-elements">
+	<div class="label-txtmessage">
+		
+	</div>  
+</div>
+<div class="form-elements">
+<div class="label-txt">Your Name</div>  <input name="username" id="username" type="text">
+</div>
+<div class="form-elements">
+<div class="label-txt">Designation</div>  <input name="username" id="username" type="text">
+</div>
+<div class="form-elements">
+<div class="label-txt">Organization</div>  <input name="username" id="username" type="text">
+</div>
+<div class="form-elements">
+<div class="label-txt">Address</div>  <input name="username" id="username" type="text">
+</div>
+<div class="form-elements">
+<div class="label-txt">Telephone</div>  <input name="username" id="username" type="text">
+</div>
+<div class="form-elements">
+<div class="label-txt">Email</div>  <input name="username" id="username" type="text">
+</div>
+<div class="form-elements">
+<div class="label-txt">Feedback</div> <textarea id="query" rows="3" cols="23" name="query"  title="mandatory to field by institute" tabindex="16" maxlength="400" onblur="chkCharLength(this)"> </textarea>
+</div>
+
+
+<br clear="all"><br>
+<center>
+
+
+<input src="defauhlt.asp_files/button-login.jpg" name="Login" id="Login" value="Login" class="login" type="Image">
+
+
+</center></form>
+</div>
+<div id="bottom"></div>
+</div>
+<div id="dcmsmemobile">
+<div id="top-mobile"></div>
+<div id="contents-mobile"></div>
+<div id="bottom-mobile"></div>
+
+</div>
+
+<!-- <div id="copyright">
+Copyright ©2011 <span class="brown">Amity</span>. All rights reserved. 
+<br />
+Help : <a href="mailto:dcmsme@amity.edu" class="brown">dcmsme@amity.edu</a>
+<br />
+Powered by AKC Data Systems (India) Pvt. Ltd.
+</div> -->
+</div>
+
+<div id="col-right">
+	<img src="defauhlt.asp_files/dc_ofzz_photo.JPG" alt="" height="538" width="430"></div>
+	
+ <!--  <img src="IPL-DD-dcmsme.jpg" alt="Amity University the Official University Partners for Delhi Daredevils and Rajasthan Royals" width="430" height="538" border="0" usemap="#Map" />
+<map name="Map" id="Map"><area shape="rect" coords="1,166,244,515" href="http://www.amity.edu/daredevils/WebForms/Default.aspx" target="_blank" />
+<area shape="rect" coords="243,168,431,453" href="http://www.amity.edu/royals/WebForms/default.aspx" target="_blank" /><area shape="rect" coords="243,495,439,510" href="http://www.amity.edu/daredevils/WebForms/Default.aspx" target="_blank" />
+<area shape="rect" coords="242,511,428,526" href="http://www.amity.edu/royals/WebForms/default.aspx" target="_blank" />
+</map> -->
+  
+  </div>
+
+</div>
+<div id="footer"></div>
+</div>
+
+<!-- template -->
+
+
+</body></html>

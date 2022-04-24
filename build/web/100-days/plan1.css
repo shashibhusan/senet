@@ -1,0 +1,41 @@
+/* 
+    Document   : plan1
+    Created on : 14 Jun, 2019, 4:49:36 PM
+    Author     : Senet
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+root { 
+    display: block;
+}
+#head
+{
+    width: 99%;
+    margin: auto;
+    font: normal normal 25px Verdana, Geneva, Arial, Helvetica, sans-serif;
+    background-color:  #f2eee4 ;
+    text-align: center;
+    padding: 10px;
+}
+.select-div
+{
+    width: 100%;
+    font: normal normal 13px Verdana, Geneva, Arial, Helvetica, sans-serif;
+    padding: 4px;
+    color: #044dd6;
+}
+select
+{
+    width:  500px;
+    margin: 4px;
+    padding: 4px 6px;
+    border: 1px solid  #044dd6;
+    font: normal normal 12px Verdana, Geneva, Arial, Helvetica, sans-serif;
+}
+#BeforeSelectField
+{
+    display: block;
+}
+
+

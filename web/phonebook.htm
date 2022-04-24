@@ -1,0 +1,498 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script src="phonebook_files/ga.js" async="" type="text/javascript"></script><script id="id_predict_include_script" type="text/javascript" src="phonebook_files/enable.js"></script>
+<title>Phone Book Directory</title> 
+<link rel="stylesheet" type="text/css" href="phonebook_files/mea-style.css">
+<script type="text/javascript" src="index_files/jquery.js"></script>
+<script type="text/javascript" src="index_files/zddaccordion.js"></script>
+<script type="text/javascript" src="index_files/zscroll.js"></script>
+<script src="index_files/swfobject_modified.js" type="text/javascript"></script>
+<script type="text/javascript">
+ddaccordion.init({
+	headerclass: "expandable", //Shared CSS class name of headers group that are expandable
+	contentclass: "categoryitems", //Shared CSS class name of contents group
+	revealtype: "click", //Reveal content when user clicks or onmouseover the header? Valid value: "click", "clickgo", or "mouseover"
+	mouseoverdelay: 200, //if revealtype="mouseover", set delay in milliseconds before header expands onMouseover
+	collapseprev: true, //Collapse previous content (so only one open at any time)? true/false 
+	defaultexpanded: [], //index of content(s) open by default [index1, index2, etc]. [] denotes no content
+	onemustopen: false, //Specify whether at least one header should be open always (so never all headers closed)
+	animatedefault: false, //Should contents open by default be animated into view?
+	persiststate: true, //persist state of opened contents within browser session?
+	toggleclass: ["", "openheader"], //Two CSS classes to be applied to the header when it's collapsed and expanded, respectively ["class1", "class2"]
+	togglehtml: ["prefix", "", ""], //Additional HTML added to the header when it's collapsed and expanded, respectively  ["position", "html1", "html2"] (see docs)
+	animatespeed: "normal", //speed of animation: integer in milliseconds (ie: 200), or keywords "fast", "normal", or "slow"
+	oninit:function(headers, expandedindices){ //custom code to run when headers have initalized
+		//do nothing
+	},
+	onopenclose:function(header, index, state, isuseractivated){ //custom code to run whenever a header is opened or closed
+		//do nothing
+	}
+})</script><style type="text/css">
+.categoryitems{display: none}
+a.hiddenajaxlink{display: none}
+</style>
+
+
+
+<style media="screen" type="text/css">#FlashID {visibility:hidden}</style><style media="screen" type="text/css">#FlashID {visibility:hidden}</style><style media="screen" type="text/css">#FlashID {visibility:hidden}</style><script type="text/javascript">if (window.addEventListener) { 
+  var callback_func = function(evt) { 
+    if ('undefined' != typeof evt.target && "A" == evt.target.nodeName) { 
+      var url = evt.target.href; 
+      EBCallBackMessageReceived3cda46bb_411e_46ac_91ee_5880389593c8(url); 
+    } 
+    return true; 
+  }; 
+  var cb_add_listener_result_click = window.addEventListener('click', callback_func, true); 
+  var cb_add_listener_result_contextmenu = window.addEventListener('contextmenu', callback_func, true); 
+} else if (document.attachEvent) {
+  var callback_func = function () { 
+    if ('undefined' != typeof event.srcElement &&'A' == event.srcElement.tagName) { 
+      var url = event.srcElement.href; 
+      EBCallBackMessageReceived3cda46bb_411e_46ac_91ee_5880389593c8(url); 
+    } 
+    return true; 
+  }; 
+  var cb_add_listener_result_click = document.attachEvent('onclick', callback_func); 
+  var cb_add_listener_result_contextmenu = document.attachEvent('oncontextmenu', callback_func); 
+} 
+ 
+
+</script><script type="text/javascript">if (window.addEventListener) { 
+  var callback_func = function(evt) { 
+    if ('undefined' != typeof evt.target && "A" == evt.target.nodeName) { 
+      var url = evt.target.href; 
+      EBCallBackMessageReceivedf423bc06_1de4_4682_b80e_22655717a6aa(url); 
+    } 
+    return true; 
+  }; 
+  var cb_add_listener_result_click = window.addEventListener('click', callback_func, true); 
+  var cb_add_listener_result_contextmenu = window.addEventListener('contextmenu', callback_func, true); 
+} else if (document.attachEvent) {
+  var callback_func = function () { 
+    if ('undefined' != typeof event.srcElement &&'A' == event.srcElement.tagName) { 
+      var url = event.srcElement.href; 
+      EBCallBackMessageReceivedf423bc06_1de4_4682_b80e_22655717a6aa(url); 
+    } 
+    return true; 
+  }; 
+  var cb_add_listener_result_click = document.attachEvent('onclick', callback_func); 
+  var cb_add_listener_result_contextmenu = document.attachEvent('oncontextmenu', callback_func); 
+} 
+ 
+
+</script>
+
+<script language="javascript">
+
+/*
+Auto center window script- Eric King (http://redrival.com/eak/index.shtml)
+Permission granted to Dynamic Drive to feature script in archive
+For full source, usage terms, and 100's more DHTML scripts, visit http://dynamicdrive.com
+*/
+
+var win = null;
+function NewWindow(mypage,myname,w,h,scroll){
+LeftPosition = (screen.width) ? (screen.width-w)/2 : 0;
+TopPosition = (screen.height) ? (screen.height-h)/2 : 0;
+settings =
+'height='+h+',width='+w+',top='+TopPosition+',left='+LeftPosition+',scrollbars='+scroll+',resizable'
+win = window.open(mypage,myname,settings)
+}
+
+</script>
+
+<script type="text/javascript">if (window.addEventListener) { 
+  var callback_func = function(evt) { 
+    if ('undefined' != typeof evt.target && "A" == evt.target.nodeName) { 
+      var url = evt.target.href; 
+      EBCallBackMessageReceived732e1500_6f2b_45ef_8549_3122fc9b3f39(url); 
+    } 
+    return true; 
+  }; 
+  var cb_add_listener_result_click = window.addEventListener('click', callback_func, true); 
+  var cb_add_listener_result_contextmenu = window.addEventListener('contextmenu', callback_func, true); 
+} else if (document.attachEvent) {
+  var callback_func = function () { 
+    if ('undefined' != typeof event.srcElement &&'A' == event.srcElement.tagName) { 
+      var url = event.srcElement.href; 
+      EBCallBackMessageReceived732e1500_6f2b_45ef_8549_3122fc9b3f39(url); 
+    } 
+    return true; 
+  }; 
+  var cb_add_listener_result_click = document.attachEvent('onclick', callback_func); 
+  var cb_add_listener_result_contextmenu = document.attachEvent('oncontextmenu', callback_func); 
+} 
+ 
+
+</script></head>
+
+<body>
+<script language="JavaScript">
+<!--
+
+//Disable right click script III- By Renigade (renigade@mediaone.net)
+//For full source code, visit http://www.dynamicdrive.com
+
+var message="";
+///////////////////////////////////
+function clickIE() {if (document.all) {(message);return false;}}
+function clickNS(e) {if 
+(document.layers||(document.getElementById&&!document.all)) {
+if (e.which==2||e.which==3) {(message);return false;}}}
+if (document.layers) 
+{document.captureEvents(Event.MOUSEDOWN);document.onmousedown=clickNS;}
+else{document.onmouseup=clickNS;document.oncontextmenu=clickIE;}
+
+document.oncontextmenu=new Function("return false")
+// --> 
+</script>
+
+<script language="JavaScript" src="phonebook_files/header.js"></script> 
+<script src="phonebook_files/a.txt" id="detect1" type="text/javascript"></script><script src="phonebook_files/TRTExtension.js" type="text/javascript"></script><script type="text/javascript">if (window.addEventListener) { 
+  var callback_func = function(evt) { 
+    if ('undefined' != typeof evt.target && "A" == evt.target.nodeName) { 
+      var url = evt.target.href; 
+      EBCallBackMessageReceived415d5348_1b1c_4216_aa4a_700303229f05(url); 
+    } 
+    return true; 
+  }; 
+  var cb_add_listener_result_click = window.addEventListener('click', callback_func, true); 
+  var cb_add_listener_result_contextmenu = window.addEventListener('contextmenu', callback_func, true); 
+} else if (document.attachEvent) {
+  var callback_func = function () { 
+    if ('undefined' != typeof event.srcElement &&'A' == event.srcElement.tagName) { 
+      var url = event.srcElement.href; 
+      EBCallBackMessageReceived415d5348_1b1c_4216_aa4a_700303229f05(url); 
+    } 
+    return true; 
+  }; 
+  var cb_add_listener_result_click = document.attachEvent('onclick', callback_func); 
+  var cb_add_listener_result_contextmenu = document.attachEvent('oncontextmenu', callback_func); 
+} 
+ 
+
+</script><script type="text/javascript">if (window.addEventListener) { 
+  var callback_func = function(evt) { 
+    if ('undefined' != typeof evt.target && "A" == evt.target.nodeName) { 
+      var url = evt.target.href; 
+      EBCallBackMessageReceivedcd1c3081_ca80_4c62_81bd_80469f8c11c3(url); 
+    } 
+    return true; 
+  }; 
+  var cb_add_listener_result_click = window.addEventListener('click', callback_func, true); 
+  var cb_add_listener_result_contextmenu = window.addEventListener('contextmenu', callback_func, true); 
+} else if (document.attachEvent) {
+  var callback_func = function () { 
+    if ('undefined' != typeof event.srcElement &&'A' == event.srcElement.tagName) { 
+      var url = event.srcElement.href; 
+      EBCallBackMessageReceivedcd1c3081_ca80_4c62_81bd_80469f8c11c3(url); 
+    } 
+    return true; 
+  }; 
+  var cb_add_listener_result_click = document.attachEvent('onclick', callback_func); 
+  var cb_add_listener_result_contextmenu = document.attachEvent('oncontextmenu', callback_func); 
+} 
+ 
+
+</script><script type="text/javascript">if (window.addEventListener) { 
+  var callback_func = function(evt) { 
+    if ('undefined' != typeof evt.target && "A" == evt.target.nodeName) { 
+      var url = evt.target.href; 
+      EBCallBackMessageReceived1a3c3b67_09f9_4ea7_816c_646511c450a5(url); 
+    } 
+    return true; 
+  }; 
+  var cb_add_listener_result_click = window.addEventListener('click', callback_func, true); 
+  var cb_add_listener_result_contextmenu = window.addEventListener('contextmenu', callback_func, true); 
+} else if (document.attachEvent) {
+  var callback_func = function () { 
+    if ('undefined' != typeof event.srcElement &&'A' == event.srcElement.tagName) { 
+      var url = event.srcElement.href; 
+      EBCallBackMessageReceived1a3c3b67_09f9_4ea7_816c_646511c450a5(url); 
+    } 
+    return true; 
+  }; 
+  var cb_add_listener_result_click = document.attachEvent('onclick', callback_func); 
+  var cb_add_listener_result_contextmenu = document.attachEvent('oncontextmenu', callback_func); 
+} 
+ 
+
+</script><script type="text/javascript">if (window.addEventListener) { 
+  var callback_func = function(evt) { 
+    if ('undefined' != typeof evt.target && "A" == evt.target.nodeName) { 
+      var url = evt.target.href; 
+      EBCallBackMessageReceived5f42ca73_57c4_4871_8c86_36b9373cbdf6(url); 
+    } 
+    return true; 
+  }; 
+  var cb_add_listener_result_click = window.addEventListener('click', callback_func, true); 
+  var cb_add_listener_result_contextmenu = window.addEventListener('contextmenu', callback_func, true); 
+} else if (document.attachEvent) {
+  var callback_func = function () { 
+    if ('undefined' != typeof event.srcElement &&'A' == event.srcElement.tagName) { 
+      var url = event.srcElement.href; 
+      EBCallBackMessageReceived5f42ca73_57c4_4871_8c86_36b9373cbdf6(url); 
+    } 
+    return true; 
+  }; 
+  var cb_add_listener_result_click = document.attachEvent('onclick', callback_func); 
+  var cb_add_listener_result_contextmenu = document.attachEvent('oncontextmenu', callback_func); 
+} 
+ 
+
+</script><script type="text/javascript">if (window.addEventListener) { 
+  var callback_func = function(evt) { 
+    if ('undefined' != typeof evt.target && "A" == evt.target.nodeName) { 
+      var url = evt.target.href; 
+      EBCallBackMessageReceived9e99e364_aab3_4323_b299_f5e4bfb5f453(url); 
+    } 
+    return true; 
+  }; 
+  var cb_add_listener_result_click = window.addEventListener('click', callback_func, true); 
+  var cb_add_listener_result_contextmenu = window.addEventListener('contextmenu', callback_func, true); 
+} else if (document.attachEvent) {
+  var callback_func = function () { 
+    if ('undefined' != typeof event.srcElement &&'A' == event.srcElement.tagName) { 
+      var url = event.srcElement.href; 
+      EBCallBackMessageReceived9e99e364_aab3_4323_b299_f5e4bfb5f453(url); 
+    } 
+    return true; 
+  }; 
+  var cb_add_listener_result_click = document.attachEvent('onclick', callback_func); 
+  var cb_add_listener_result_contextmenu = document.attachEvent('oncontextmenu', callback_func); 
+} 
+ 
+
+</script>
+<table align="center" cellpadding="0" cellspacing="0" width="1000">
+	<tbody><tr>
+		<td>
+			<div class="minHeight">
+			<table align="center" cellpadding="0" cellspacing="0" width="1000">
+				<tbody><tr class="outer">
+					<td colspan="3" valign="top">
+						
+
+
+
+
+
+
+
+
+<div class="toparea">
+    <div class="topheader">
+		
+			<div class="topheader-center" style="font-size: 11px;">
+				&nbsp;&nbsp;
+				
+		</div>
+	    <div class="topheader-right" style="font-size: 11px;">
+			<a href="http://www.dcmsme.gov.in/" onclick="welcomeLink" style="outline: medium none;" border="none">
+			<img src="phonebook_files/home-icon.jpg" alt="Homepage" border="none"></a><span class="common-txt"></span>
+		</div>
+    </div> 
+	    <div class="topheader-banner">
+<div class="topheader-banner-left"></div>
+		<div class="header-content"><br>
+		  <span style="font-family:Times New Roman;font-size:15px; color:#fff;">O/O of DCMSME ,Ministry of Micro Small &amp; Medium Enterprises ,Goverment of India </span><br>
+
+</div>
+	     	
+			<div class="light-header"></div>
+	    	 	<div class="topheader-banner-right"><img src="phonebook_files/logo.jpg" alt="Passport Seva" height="57" width="173"></div>
+				
+	    </div>
+		<div class="topheader">
+	 	 
+		<div class="top-menu-area-right" style="font-size: 11px; text-align: right;">
+			
+			&nbsp;&nbsp;
+			
+		</div>
+	</div>
+		
+     <div class="green-tab">
+		<marquee direction="left" scrollamount="5" class="marquee-txt"></marquee>
+     </div>
+		
+</div>
+
+					</td>
+				</tr>
+				<tr class="outer">
+					<td style="padding-left: 2px;" valign="top" width="200">
+						
+
+
+    <div id="container-content">
+    	<div id="container-content-left">
+        	<div class="arrowlistmenu">
+                
+              
+                    <ul style="display: none;" contentindex="0c" class="categoryitems">
+                        <li><a href="http://164.100.44.167/dcmsme/feedbackreportdfdsfgfgfhgfhgfj.jsp">TO See the feedbackdetail</a></li>
+                        <li><a href="http://164.100.44.167/mail/index.jsp">To Reply the feedback detail</a></li>
+                    </ul>
+                <h3 class="menuheader"><a href="http://164.100.44.167./dcmsme">cases Details </a></h3>
+				<h3 class="menuheader"><a href="http://164.100.44.167./toolroom1"> MPR of Autonomus Inst.</a></h3>
+				<h3 class="menuheader"><a href="http://164.100.44.167./mprpms" onclick="NewWindow(this.href,'name','400','400','yes');return false">MPR of Development Inst.</a></h3>
+				<h3 class="menuheader"><a href="http://164.100.44.167./mprsenet">Senet Expenditure Details</a></h3>
+				<h3 class="menuheader"><a href="http://164.100.44.167./mprbarcode">MSME Barcode Details</a></h3>
+                
+                <h3 class="menuheader"><a href="http://www.dcmsme.gov.in/contactus.html">Contact Us</a></h3>
+          </div>
+
+					</div></div></td>
+					<td style="padding-left: 2px; padding-right: 2px; padding-bottom: 2px;" valign="top" width="800">
+						
+
+
+
+
+
+<script type="text/javascript">
+	function hideDPCwindow() {
+		document.getElementById('dpcblock').style.display = 'none';
+		return false;
+	}
+
+	function displayPincodeDistrict(value) {
+		if (value == 'pincode') {
+			document.getElementById('yespincode').style.display = '';
+			document.getElementById('stateId1').style.display = 'none';
+			document.getElementById('stateId2').style.display = 'none';
+		} else if (value == 'statedistrict') {
+			document.getElementById('stateId1').style.display = '';
+			document.getElementById('stateId2').style.display = '';
+			document.getElementById('yespincode').style.display = 'none';
+		}
+	}
+
+	function checkValidate()
+	{
+		if(document.forms["locateDpcoffice"].optionSelected[1].checked==true  && document.forms["locateDpcoffice"].pinCodeDistrict.value=="" )
+		{
+			 alert("Please enter PIN Code.");
+			 return false;
+		}
+		if(document.forms["locateDpcoffice"].optionSelected[0].checked==true  && 
+		(document.forms["locateDpcoffice"].state.value=="" || document.forms["locateDpcoffice"].state.value=="----- Select -----" ))
+		{
+			alert("Please Select a State.");
+			return false;
+		}
+	} 
+	
+</script>
+
+
+<form id="locateDPC" name="locateDpcoffice" action="phonebookdatagenerationresult report.jsp" method="post" target="foo" onSubmit="window.open('', 'foo', 'width=550,height=300,status=yes,resizable=yes,scrollbars=yes')">
+<table class="border" bgcolor="#f2f4f5" cellpadding="0" cellspacing="0" width="60%">
+	<tbody><tr><td align="center">Phone Book Directories</td></tr>
+	<tr bgcolor="#ffffef"><td style="padding: 2px;">Fields marked with asterisk (<span class="mandatory">*</span>) are mandatory</td></tr>	
+
+	<tr>
+		<td>
+			<table cellpadding="4" cellspacing="0" width="100%">
+				<tbody><tr>
+					<td width="40%">
+						Select an Option<span class="mandatory">*</span>
+					</td>
+					<td>
+						
+							<input autocomplete="off" name="optionSelected" id="locateDPC_optionSelectedstatedistrict" value="statedistrict" onclick="displayPincodeDistrict(this.value);" type="radio"><label for="locateDPC_optionSelectedstatedistrict">Designation</label>
+							
+<input autocomplete="off" name="optionSelected" id="locateDPC_optionSelectedpincode" checked="checked" value="pincode" onclick="displayPincodeDistrict(this.value);" type="radio">
+
+<label for="locateDPC_optionSelectedpincode">Division</label>
+<div id="wwgrp_locateDPC_optionSelected" class="wwgrp">
+<div id="wwctrl_locateDPC_optionSelected" class="wwctrl">
+</div> </div>
+
+
+						
+						
+					</td>
+				</tr>
+
+				<tr id="yespincode" style="">
+					<td>Division<span class="mandatory">*</span></td>
+					<td>
+					
+					<select autocomplete="off" name="division" id="division" class="txtbox" onchange="document.getElementById('showDistrict').click()">
+    <option value="" selected="selected">----- Select -----</option>
+    <option value="Senet Division">Senet Division </option>
+	<option value="ToolRoom">ToolRoom </option>
+    <option value="Cash Section">Cash Section</option>
+   
+    </select>
+ 
+</td>
+				</tr>
+
+				<tr id="stateId1" style="display: none;">
+					<td>designation<span class="mandatory">*</span></td>
+					<td>
+						<select autocomplete="off" name="designation" id="designation" class="txtbox" onchange="document.getElementById('showDistrict').click()">
+    <option value="" selected="selected">----- Select -----</option>
+    <option value="Development Commissioner">Development Commissioner </option>
+    <option value="Additional Development Commissioner">Additional Development Commissioner </option>
+    <option value="Joint Development Commissioner">Joint Development Commissioner</option>
+    <option value="Industrial adviser">Industrial adviser</option>
+    <option value="Assitant industrial adviser">Assitant industrial adviser</option>
+    <option value="Director">Director</option>
+    <option value="Deputy Director">Deputy Director</option>
+    <option value="Assistant Director">Assistant Director</option>
+    <option value="PA/PS">PA/PS</option>
+    </select>
+<div id="wwgrp_locateDPC_state" class="wwgrp">
+<div id="wwctrl_locateDPC_state" class="wwctrl">
+</div> </div>
+
+						<div id="wwctrl_showDistrict" align="right"><input autocomplete="off" style="display: none;" id="showDistrict" name="method:showDistrict" value="next" class="common-button" type="submit">
+</div>  
+					</td>
+				</tr>
+				
+				<tr id="stateId2" style="display: none;">
+					<td>&nbsp;</td>
+					<td><div id="wwgrp_locateDPC_district" class="wwgrp">
+<div id="wwctrl_locateDPC_district" class="wwctrl">
+</div> </div>
+
+						
+						
+					</td>
+				</tr>
+			</tbody></table>
+		</td>
+	</tr>
+	<tr bgcolor="#e2e2e2">
+		<td style="padding: 2px;" align="right">
+		
+		<div id="wwctrl_locateDPC_search" align="right">
+		
+</div>  </td>
+	</tr>
+	<tr id="dpcblock">
+		<td>
+			
+		</td>
+	</tr>
+</tbody></table>
+
+</form></td></tr>
+			</tbody></table>
+		
+		</div></td>
+	</tr>
+	<tr class="outer">
+	  <td colspan="2" class="outer" bgcolor="#ffffff" valign="top">
+			<div class="footer-strip white-txt">
+    	Maintained By&nbsp;<a href="http://www.dcmsme.gov.in" target="_blank">O/O DCMSME</a>
+	</div>
+   </td>
+	</tr>
+</tbody></table>
+<div style="display: none;" id="YontooInstallID">8cda6e4e-b3bb-4db4-83be-0113f6bd470d</div><div style="display: none;" id="Y2PluginIds">Y2:8cda6e4e-b3bb-4db4-83be-0113f6bd470d</div></body></html>

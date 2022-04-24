@@ -1,0 +1,209 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+<!DOCTYPE struts-config PUBLIC
+          "-//Apache Software Foundation//DTD Struts Configuration 1.3//EN"
+          "http://jakarta.apache.org/struts/dtds/struts-config_1_3.dtd">
+
+
+<struts-config>
+    <form-beans>
+        <form-bean name="logoForm" type="pms.form.logoForm"/>
+        <form-bean name="LibActionForm" type="pms.form.LibActionForm"/>
+         <form-bean name="AcrupdateForm" type="acr.net.AcrupdateForm"/>
+        <form-bean name="AcrActionForm" type="acr.net.AcrActionForm"/>
+        <form-bean name="ChangepswForm" type="roseindia.net.ChangepswForm"/>
+        <form-bean name="RevenueActionForm" type="pms.form.RevenueActionForm"/>
+         <form-bean name="CourtcasesForm" type="roseindia.net.CourtcasesForm"/>
+        <form-bean name="ISOActionForm" type="pms.form.ISOActionForm"/>
+        <form-bean name="ReportActionForm" type="pms.form.ReportActionForm"/>
+        <form-bean name="SpeicalprogrammesActionForm" type="pms.form.SpeicalprogrammesActionForm"/>
+        <form-bean name="workshopForm" type="pms.form.workshopForm"/>
+        <form-bean name="VendorActionForm" type="pms.form.VendorActionForm"/>
+        <form-bean name="EsdpActionForm" type="pms.form.EsdpActionForm"/>
+        <form-bean name="EsdpActionActionForm" type="roseindia.net.EsdpActionActionForm"/>
+        <form-bean name="NewStrutsActionForm" type="roseindia.net.NewStrutsActionForm"/>
+        <form-bean name="SenettargetActionForm" type="roseindia.net.SenettargetActionForm"/>
+        <form-bean name="SenetActionForm" type="roseindia.net.SenetActionForm"/>
+        <form-bean name="Main" type="roseindia.net.Main"/>
+        <form-bean name="StrutsUploadAndSaveForm" type="roseindia.net.StrutsUploadAndSaveForm"/>
+        <form-bean name="StrutsUploadAndSaneForm" type="roseindia.net.StrutsUploadAndSaneForm"/>
+        <form-bean name="StrutsUploadAndSaveForm" type="roseindia.net.StrutsUploadAndSaveForm"/>
+         <form-bean name="LogoutActionForm" type="pms.form.LogoutActionForm"/>
+    <form-bean
+name="FileUploadAndSave"
+type="roseindia.net.StrutsUploadAndSaveForm"/>
+    </form-beans>
+
+   <global-exceptions>
+    <exception key="error1.msg" type="java.lang.Exception"
+      path="/stat.jsp" />
+    </global-exceptions>
+
+    <global-forwards>
+        <forward name="sucess"  path="/main.jsp"/>
+        <forward name="failure"  path="/stat.jsp"/>
+        <forward name="fail"  path="/expirepass.jsp"/>
+    </global-forwards>
+
+    <action-mappings>
+       <action
+path="/FileUploadAndSave"
+type="roseindia.net.StrutsUploadAndSaveAction"
+name="FileUploadAndSave"
+scope="request"
+validate="true"
+input="/slogin.jsp">
+<forward name="success" path="/loginValidate.jsp"/>
+<forward name="failure"  path="/slogin.jsp"/>
+</action>
+<action input="/slogin.jsp" name="StrutsUploadAndSaveForm" path="/FileUploadAndSave" scope="session" type="roseindia.net.StrutsUploadAndSaveAction">
+    <forward name="success" path="/loginValidate.jsp"/>
+    <forward name="failure"  path="/slogin.jsp"/>
+</action>
+<action input="/main.jsp" name="Main" path="/FileSave" scope="session" type="roseindia.net.MainAction">
+     <forward name="success" path="/main1.jsp"/>
+     <forward name="failure"  path="/stat.jsp"/>
+</action>
+<action input="/senet.jsp" parameter="method" name="SenetActionForm" path="/SenetAction" scope="session" type="roseindia.net.SenetActionAction">
+<forward name="success" path="/status.jsp"/>
+     <forward name="failure"  path="/stat.jsp"/>
+</action>
+<action input="/targetsenet.jsp" parameter="method" name="SenettargetActionForm" path="/SenettargetAction" scope="session" type="roseindia.net.SenettargetActionAction">
+    
+     <forward name="success" path="/status.jsp"/>
+    <forward name="failure"  path="/status.jsp"/> 
+    
+</action>
+
+<action input="/esdp.jsp" parameter="method"  name="EsdpActionForm" path="/EsdpAction" scope="session" type="pms.form.EsdpActionAction">
+ <forward name="success" path="/status.jsp"/>
+    <forward name="failure"  path="/stat.jsp"/> 
+    
+</action>
+<action input="/vendor.jsp" parameter="method" name="VendorActionForm" path="/VendorAction" scope="session" type="pms.form.VendorActionAction">
+<forward name="success" path="/status.jsp"/>
+    <forward name="failure"  path="/stat.jsp"/>
+</action>
+<action input="/workshop.jsp" parameter="method" name="workshopForm" path="/workshop" scope="session" type="pms.form.workshopAction">
+<forward name="success" path="/status.jsp"/>
+<forward name="failure"  path="/stat.jsp"/>
+</action>
+<action input="/revenue.jsp"  parameter="method" name="RevenueActionForm" path="/RevenueAction" scope="session" type="pms.form.RevenueActionAction">
+   <forward name="success" path="/status.jsp"/>
+    <forward name="failure"  path="/stat.jsp"/> 
+   </action>
+
+   <action input="/ISO2.jsp" parameter="method" path="/ISOAction" scope="session" type="roseindia.net.ISOAction">
+   <forward name="add" path="/status.jsp"/>
+   <forward name="update" path="/status.jsp"/>
+    <forward name="failure"  path="/stat.jsp"/>
+   </action>
+
+   <action input="/ISO2.jsp" parameter="method" path="/ISOTargetAction" scope="session" type="roseindia.net.ISOTargetAction">
+   <forward name="add" path="/status.jsp"/>
+   <forward name="update" path="/status.jsp"/>
+    <forward name="failure"  path="/stat.jsp"/>
+   </action>
+
+
+   <action  path="/HelloWorld" scope="session" type="roseindia.net.Helloworld">
+     <forward name="success" path="/NewServlet"/>
+   </action>
+
+   <action  path="/newAction" scope="session" type="roseindia.net.Helloworld">
+     <forward name="check" path="/CheckDrop"/>
+   </action>
+
+<action input="/report_form.jsp" parameter="method" name="ReportActionForm" path="/ReportAction" scope="session" type="pms.form.ReportActionAction">
+ <forward name="success" path="/status.jsp"/>
+    <forward name="failure"  path="/stat.jsp"/>
+</action>
+    <action input="/specialprogrammes.jsp" parameter="method" name="SpeicalprogrammesActionForm" path="/SpecialprogrammesAction" scope="session" type="pms.form.SpecialprogrammesActionAction">
+    <forward name="success" path="/status.jsp"/>
+    <forward name="failure"  path="/stat.jsp"/>
+
+    </action>
+    <action input="/chnagepsw.jsp" name="ChangepswForm" path="/Changepsw" scope="session" type="roseindia.net.ChangepswAction">
+        <forward name="success" path="/statusNew.jsp"/>
+    <forward name="failure"  path="/stat.jsp"/>
+       </action>
+   
+       <action input="/casefile.jsp" name="CourtcasesForm" path="/Courtcases" scope="session" type="roseindia.net.CourtcasesAction">
+<forward name="success" path="/status.jsp"/>
+    <forward name="failure"  path="/status1.jsp"/>
+</action>
+<action input="/acr.jsp"  name="AcrActionForm" path="/AcrActionpath" scope="session" type="acr.net.AcrActionAction"
+>
+    <forward name="success" path="/status.jsp"/>
+    <forward name="failure"  path="/status1.jsp"/>
+</action>
+<action input="/acredit.jsp" name="AcrupdateForm" path="/Acrupdate" scope="session" type="acr.net.AcrupdateAction">
+
+
+    <forward name="success" path="/status.jsp"/>
+    <forward name="failure"  path="/status1.jsp"/>
+
+</action>
+<action input="/library.jsp" name="LibActionForm" path="/library" scope="session" type="pms.form.LibAction">
+    <forward name="success" path="/status.jsp"/>
+    <forward name="failure"  path="/status1.jsp"/>
+    </action>
+
+<!-- start commented by shashi bhusan to make it same as live system-->
+
+<!-- <action input="/logout.jsp" name="LogoutActionForm" path="/Logout" scope="session" type="pms.form.LogoutAction">
+      <forward name="success" path="/LogoutSession.jsp"/>
+    <forward name="failure"  path="/stat.jsp"/>
+      </action>
+      <action input="/logoo.jsp" name="logoForm" path="/logo" scope="session" type="pms.form.LogoAction">
+           <forward name="success" path="/LogoutSession.jsp"/>
+         <forward name="failure"  path="/stat.jsp"/>
+          </action>-->
+          
+  <!-- ends commented by shashi bhusan to make it same as live system-->
+    </action-mappings>
+    
+    <controller processorClass="org.apache.struts.tiles.TilesRequestProcessor"/>
+
+    <message-resources parameter="com/myapp/struts/ApplicationResource"/>    
+    
+    <!-- ========================= Tiles plugin ===============================-->
+    <!--
+    This plugin initialize Tiles definition factory. This later can takes some
+    parameters explained here after. The plugin first read parameters from
+    web.xml, thenoverload them with parameters defined here. All parameters
+    are optional.
+    The plugin should be declared in each struts-config file.
+    - definitions-config: (optional)
+    Specify configuration file names. There can be several comma
+    separated file names (default: ?? )
+    - moduleAware: (optional - struts1.1)
+    Specify if the Tiles definition factory is module aware. If true
+    (default), there will be one factory for each Struts module.
+    If false, there will be one common factory for all module. In this
+    later case, it is still needed to declare one plugin per module.
+    The factory will be initialized with parameters found in the first
+    initialized plugin (generally the one associated with the default
+    module).
+    true : One factory per module. (default)
+    false : one single shared factory for all modules
+    - definitions-parser-validate: (optional)
+    Specify if xml parser should validate the Tiles configuration file.
+    true : validate. DTD should be specified in file header (default)
+    false : no validation
+
+    Paths found in Tiles definitions are relative to the main context.
+    -->
+    <plug-in className="org.apache.struts.tiles.TilesPlugin" >
+        <set-property property="definitions-config" value="/WEB-INF/tiles-defs.xml" />      
+        <set-property property="moduleAware" value="true" />
+    </plug-in>
+    
+    <!-- ========================= Validator plugin ================================= -->
+    <plug-in className="org.apache.struts.validator.ValidatorPlugIn">
+        <set-property
+            property="pathnames"
+            value="/WEB-INF/validator-rules.xml,/WEB-INF/validation.xml"/>
+    </plug-in>
+  
+</struts-config>

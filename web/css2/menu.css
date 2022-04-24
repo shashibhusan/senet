@@ -1,0 +1,147 @@
+body {
+	behavior:url("csshover.htc");
+	padding: 0px;
+}
+	
+* {
+	font: normal Verdana, Arial, Tahoma, Sans-Serif, Helvetica;
+}
+
+ul,li {
+	display: block;
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+	
+
+ul {
+	/*width: 150px;
+	background: #fff;
+	list-style-type: none; */
+	padding: 0px 0 0px 0px;
+	width: 180px;
+	margin: 0px;
+	
+}
+
+li {
+	position: relative;
+	padding: 0px;
+	z-index: 9;
+}
+
+li.folder	{
+	font: normal 11px/16px Verdana, Arial, Tahoma, Sans-Serif, Helvetica;
+	
+	/*padding: 2px 0 4px 15px;
+	background-color: #EFEFEF;*/
+	height: 30px;
+	padding: 0px 0 0 0px;
+	background:  url(menu8.gif) 0 -32px;
+	left: 0px; /* IE */
+	border-top: 1px solid #FFFFFF;
+	border-bottom: 1px solid #CCCCCC;
+}	
+
+li.folder:hover {
+	z-index: 10;
+	background-color: #DDDDDD;
+	font: normal 11px/16px Verdana, Arial, Tahoma, Sans-Serif, Helvetica;
+}
+		
+li.folder ul {
+	position: absolute;
+	display: none;
+	left: 10px; /* IE */
+	top: 5px;
+}
+				
+li.folder>ul { 
+	left: 90px;
+}
+		
+ul.level1 li.folder:hover ul.level2 {
+	display: block;
+	width: 150px;
+}
+
+a {
+	/*height: 32px;
+	padding: 2px;
+	text-decoration: none;
+	width: 150px; /* IE */
+	height: 32px;
+  	voice-family: "\"}\""; 
+  	voice-family: inherit;
+  	height: 24px;
+	text-decoration: none;
+}
+
+li>a { 
+	width: auto;
+}
+
+li a.submenu {
+	background-color: #DDDDDD;
+	padding-left: 15px;
+	font: normal 11px/16px Verdana, Arial, Tahoma, Sans-Serif, Helvetica;
+	display: block;
+	border-bottom: 1px solid #FFF;
+	padding-top: 3px;
+	padding-bottom: 4px;
+	border-size: 1px;
+}
+			
+li.explain { 
+	font: bold 11px Verdana, Arial, Tahoma, Sans-Serif, Helvetica;
+	background-color: #DCEAF9;
+	border-bottom: 1px solid #FFFFFF;
+	color: #6699CC;
+	padding-left: 10px;
+	padding-top: 4px;
+	padding-bottom: 4px;
+	width: 190px;	
+}
+
+/* Hide from IE5-mac. Only IE-win sees this. \*/
+* html li.explain { 
+	width: 202px;
+}
+/* End hide from IE5/mac */
+
+a:link, a:visited {
+	/*color: #666;	*/
+	color: #656556;
+	display: block;
+	background:  url(menu8.gif);
+	padding: 8px 0 0 20px;
+}
+
+a:hover {
+	/*color: #000;	*/
+	color: #474739;
+	background:  url(menu8.gif) 0 -32px;
+	padding: 8px 0 0 20px;
+}
+
+#menu {
+    /*border: 1px solid #ccc;
+    margin: 0;
+    padding: 0;
+    width: 150px;
+	padding-left: 0px;*/
+	
+	width: 150px;
+	margin: -10px;
+	border-style: solid;
+	border-color: #656556;
+	border-size: 0px;
+	border-width: 0px;
+}
+
+#link {
+    font: 11px Verdana, Arial, Tahoma, Sans-Serif, Helvetica;
+	padding: 0px 0px 0px 20px;
+	margin-top: 15px;
+}

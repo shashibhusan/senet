@@ -1,0 +1,118 @@
+ PreparedStatement stmt1 = (PreparedStatement) con.prepareStatement("INSERT INTO tbl_br_lib(INST_ID, MONTHS, YEAR, Branch, Br_hardware_target, Br_hardware_tomonth, Br_hardware_upto)"
+
+                            + " VALUES  (?,?,?,?,?,?,?)");
+ //sno, INST_ID, MONTHS, YEAR, Branch, Br_hardware_target, Br_hardware_tomonth, Br_hardware_upto, Br_con_target, Br_con_tomonth, Br_con_upto
+                                stmt1.setString(1, InstId);
+				stmt1.setInt(2, Months);
+                                stmt1.setString(3, Years);
+				stmt1.setString(4, Branch);
+				stmt1.setInt(5, Br_hardware_target);
+                                stmt1.setInt(6, Br_hardware_tomonth);
+                                stmt1.setInt(7, Br_hardware_upto);
+
+
+
+
+				// ResultSet rs = stmt.executeQuery(sql);
+
+                     stmt1.execute();
+                    System.out.println("chandrahhchdfdjfsfdfdsjkfjkfds"+stmt1);
+ PreparedStatement stmt2 = (PreparedStatement) con.prepareStatement("INSERT INTO tbl_br_lib(INST_ID, MONTHS, YEAR, Branch, Br_hardware_target, Br_hardware_tomonth, Br_hardware_upto)"
+
+                            + " VALUES  (?,?,?,?,?,?,?)");
+ //sno, INST_ID, MONTHS, YEAR, Branch, Br_hardware_target, Br_hardware_tomonth, Br_hardware_upto, Br_con_target, Br_con_tomonth, Br_con_upto
+                                stmt2.setString(1, InstId);
+				stmt2.setInt(2, Months);
+                                stmt2.setString(3, Years);
+				stmt2.setString(4, Branch_1);
+				stmt2.setInt(5, Br_hardware_target_1);
+                                stmt2.setInt(6, Br_hardware_tomonth_1);
+                                stmt2.setInt(7, Br_hardware_upto_1);
+
+
+
+				// ResultSet rs = stmt.executeQuery(sql);
+
+                     stmt2.execute();
+                    // System.out.println("chandrahhchdfdjfsfdfdsjkfjkfds"+stmt1);
+ PreparedStatement stmt3 = (PreparedStatement) con.prepareStatement("INSERT INTO tbl_br_lib(INST_ID, MONTHS, YEAR, Branch, Br_hardware_target, Br_hardware_tomonth, Br_hardware_upto)"
+
+                            + " VALUES  (?,?,?,?,?,?,?)");
+ //sno, INST_ID, MONTHS, YEAR, Branch, Br_hardware_target, Br_hardware_tomonth, Br_hardware_upto, Br_con_target, Br_con_tomonth, Br_con_upto
+                                stmt3.setString(1, InstId);
+				stmt3.setInt(2, Months);
+                                stmt3.setString(3, Years);
+				stmt3.setString(4, Branch_2);
+				stmt3.setInt(5, Br_hardware_target_2);
+                                stmt3.setInt(6, Br_hardware_tomonth_2);
+                                stmt3.setInt(7, Br_hardware_upto_2);
+
+
+
+				// ResultSet rs = stmt.executeQuery(sql);
+
+                     stmt3.execute();
+                    // System.out.println("chandrahhchdfdjfsfdfdsjkfjkfds"+stmt1);
+ PreparedStatement stmt4 = (PreparedStatement) con.prepareStatement("INSERT INTO tbl_br_lib(INST_ID, MONTHS, YEAR, Branch, Br_hardware_target, Br_hardware_tomonth, Br_hardware_upto)"
+
+                            + " VALUES  (?,?,?,?,?,?,?)");
+ //sno, INST_ID, MONTHS, YEAR, Branch, Br_hardware_target, Br_hardware_tomonth, Br_hardware_upto, Br_con_target, Br_con_tomonth, Br_con_upto
+                                stmt4.setString(1, InstId);
+				stmt4.setInt(2, Months);
+                                stmt4.setString(3, Years);
+				stmt4.setString(4, Branch_3);
+				stmt4.setInt(5, Br_hardware_target_3);
+                                stmt4.setInt(6, Br_hardware_tomonth_3);
+                                stmt4.setInt(7, Br_hardware_upto_3);
+
+
+
+
+				// ResultSet rs = stmt.executeQuery(sql);
+
+                     stmt4.execute();
+                    // System.out.println("chandrahhchdfdjfsfdfdsjkfjkfds"+stmt1);
+ PreparedStatement stmt5 = (PreparedStatement) con.prepareStatement("INSERT INTO tbl_br_lib(INST_ID, MONTHS, YEAR, Branch, Br_hardware_target, Br_hardware_tomonth, Br_hardware_upto)"
+
+                            + " VALUES  (?,?,?,?,?,?,?)");
+ //sno, INST_ID, MONTHS, YEAR, Branch, Br_hardware_target, Br_hardware_tomonth, Br_hardware_upto, Br_con_target, Br_con_tomonth, Br_con_upto
+                                stmt5.setString(1, InstId);
+				stmt5.setInt(2, Months);
+                                stmt5.setString(3, Years);
+				stmt5.setString(4, Branch_4);
+				stmt5.setInt(5, Br_hardware_target_4);
+                                stmt5.setInt(6, Br_hardware_tomonth_4);
+                                stmt5.setInt(7, Br_hardware_upto_4);
+
+
+
+
+				// ResultSet rs = stmt.executeQuery(sql);
+
+                     stmt5.execute();
+                    // System.out.println("chandrahhchdfdjfsfdfdsjkfjkfds"+stmt1);
+ PreparedStatement stmt6 = (PreparedStatement) con.prepareStatement("INSERT INTO tbl_br_lib(INST_ID, MONTHS, YEAR, Branch, Br_hardware_target, Br_hardware_tomonth, Br_hardware_upto)"
+
+                            + " VALUES  (?,?,?,?,?,?,?)");
+ //sno, INST_ID, MONTHS, YEAR, Branch, Br_hardware_target, Br_hardware_tomonth, Br_hardware_upto, Br_con_target, Br_con_tomonth, Br_con_upto
+                                stmt6.setString(1, InstId);
+				stmt6.setInt(2, Months);
+                                stmt6.setString(3, Years);
+				stmt6.setString(4, Branch_5);
+				stmt6.setInt(5, Br_hardware_target_5);
+                                stmt6.setInt(6, Br_hardware_tomonth_5);
+                                stmt6.setInt(7, Br_hardware_upto_5);
+
+
+
+
+				// ResultSet rs = stmt.executeQuery(sql);
+
+                     stmt6.execute();
+ 
+
+
+
+
+
+                        
